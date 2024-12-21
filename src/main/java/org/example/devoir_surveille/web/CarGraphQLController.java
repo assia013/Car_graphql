@@ -15,8 +15,8 @@ import java.util.List;
 public class CarGraphQLController {
     private CarService carService;
     @MutationMapping
-    public CarDto saveCar(@Argument CarDto carDto) {
-        return carService.saveCar(carDto);
+    public CarDto saveCar(@Argument CarDto car) {
+        return carService.saveCar(car);
     }
 
     @QueryMapping
